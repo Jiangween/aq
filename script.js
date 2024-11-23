@@ -9,8 +9,7 @@ document.getElementById("submitBtn").addEventListener("click", async function ()
     document.getElementById("responseOutput").textContent = "正在加载...";
 
     try {
-        // 修改为本地后端服务地址
-        const response = await fetch(`http://127.0.0.1:5000/proxy?msg=${encodeURIComponent(userInput)}`);
+        const response = await fetch(`https://render-backend-5xuo.onrender.com/proxy?msg=${encodeURIComponent(userInput)}`);
         if (!response.ok) throw new Error(`HTTP 错误: ${response.status}`);
         const data = await response.json();
 
