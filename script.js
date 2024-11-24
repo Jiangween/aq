@@ -13,7 +13,6 @@ document.getElementById("submitBtn").addEventListener("click", async function ()
         if (!response.ok) throw new Error(`HTTP 错误: ${response.status}`);
         const data = await response.json();
 
-        // 显示 AI 返回的答案
         document.getElementById("responseOutput").textContent = data.answer || "AI 没有提供回答。";
     } catch (error) {
         console.error("Error:", error);

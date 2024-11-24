@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Question Answering</title>
+    <title>小曦枫智能问答</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Ask AI a Question</h1>
-        <textarea id="userInput" placeholder="Type your question here..."></textarea>
-        <button id="submitBtn">Ask AI</button>
-        <p id="responseOutput">Response will appear here...</p>
+        <h1>🌟 小曦枫智能问答 🌟</h1>
+        <p class="subtitle">有问题？让 AI 为您解答！</p>
+        <label for="userInput" class="input-label">请输入您的问题：</label>
+        <textarea id="userInput" placeholder="在此输入您的问题..."></textarea>
+        <button id="submitBtn">提交问题</button>
+        <div id="responseOutput" class="response-box">AI 的回答会显示在这里...</div>
     </div>
+
+    <footer>
+        <p>© 2024 小曦枫智能问答 | 由 AI 提供支持</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
